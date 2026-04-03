@@ -15,7 +15,7 @@ if st.button("Ask Aqua 🌊"):
         try:
             # THE TRUTH: You MUST use 'models/' prefix and '1.5' to get past the 429 error
             response = client.models.generate_content(
-                model="models/gemini-1.5-flash",
+                model ="geminni-3.0-flash",
                 contents=f"You are Aqua, a friendly math teacher. Answer in {language}: {question}"
             )
             st.write(f"**Aqua:** {response.text}")
